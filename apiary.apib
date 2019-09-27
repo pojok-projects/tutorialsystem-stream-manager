@@ -1,0 +1,40 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# Tutorialinaja - Stream Manager
+
+Stream Manager API Docs
+
+## API Host
+* HOST: https://api.tutorialinaja.tech
+
+## API Version
+* /v1/
+
+___
+**Table Routes:**
+| URL                    | Method | INFO                        |
+| ---------------------- | ------ | ----------------------------|
+| `video/get`            | POST   | Get Video That Will Played  |
+
+___
+**Requests Tables:**
+| Parameter     | type   | Status   | Description                               |
+| ------------- | ------ | -------- | ----------------------------------------- |
+| `metadata_id` | uuid   | required | metadata ID                               |
+| `num`         | INT    | required | number of video                           |
+
+## Streammer [/questions]
+
+### Get Video That Will Played [POST /video/get]
+
++ Request (application/json)
+
+        {
+            "metadataid_id": 123,
+            "num": 4
+        }
+
++ Response 200 (application/json)
+
+        You Will Retrive Video
