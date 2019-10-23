@@ -27,7 +27,7 @@ module.exports = {
                     })
                 }
                 
-                stream(s3 + file_path, res);
+                stream(apis3 + file_path, res);
             } else {
                 throw new Error(axiosReq)
             }
